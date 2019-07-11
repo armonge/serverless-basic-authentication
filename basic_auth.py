@@ -48,7 +48,7 @@ def basicAuth(event, context):
         raise Exception("Unauthorized")
 
     authResponse = {
-        "principalId": username,
+        "principalId": "token",
         "usageIdentifierKey": token,
         "policyDocument": {
             "Version": "2012-10-17",
